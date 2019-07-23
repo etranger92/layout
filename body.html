@@ -178,6 +178,7 @@
 		#main-div {
 			/*fix for the responsive*/
 			height: 700px;
+			display: block;
 
 		}
 
@@ -235,7 +236,9 @@
 			height: auto;
 			text-align: center;
 			padding: 0px;
-			margin: 0px;
+			margin: 5px;
+			display: block;
+			
 		}
 
 		footer div {
@@ -266,9 +269,15 @@
 		}
 		
 		@media only screen and (max-width:680px) {
-			footer{
-				position: fixed;
+			
+		
+			#main-div{
+			display: block;
+			height: 78%;
 			}
+			
+
+			
 			
 		}
 
@@ -315,7 +324,7 @@
 		</nav>
 	</header>
 
-
+<div id="position-div"> 
 	<div id="main-div">
 
 		<h1> How we do communicate with the pc ? </h1>
@@ -377,7 +386,7 @@
 		</div>
 
 	</footer>
-
+	</div>
 
 
 </body>
