@@ -6,7 +6,15 @@
 	* {
 		margin: 0px;
 		padding: 0px;
+
 	}
+
+	:root {
+
+		--background-color: blue;
+	}
+	
+	
 
 	body a {
 		text-decoration: none;
@@ -15,9 +23,9 @@
 		font-weight: bold;
 	}
 
-	body {
-		--background-color: green;
-	}
+	
+
+
 
 	/***********************************HEADER*************************/
 	header {
@@ -79,9 +87,85 @@
 
 	/**********************************end header*************************/
 	/**********************************middle*************************/
-	
-	
 
+	h1 {
+		text-align: center;
+		display: block;
+		margin-top: 5%;
+
+	}
+
+	#main-div {
+		padding-top: 2%;
+		display: flex;
+		flex-direction: column;
+	
+	}
+
+	#content-text {
+		display: flex;
+		flex-direction: row;
+		
+
+		margin-top: 5%;
+
+	}
+
+	#content-text section {
+
+		width: 100%;
+		padding-top: 100px;
+		
+	}
+
+
+	/********************************end-middle*************************/
+	/**********************************footer***************************/
+
+	footer {
+		
+		border-style: solid;
+		margin-top: 4%;
+		display:  block;
+	}
+
+	#main-div-footer {
+		display: flex;
+		4row;
+		justify-content: center;
+		padding-top: 2%;
+		background-color: var(--background-color);
+
+	}
+
+	footer #main-div-footer div {
+
+		width: 20%;
+
+	}
+	/******************************************Responsive Part ***************************/
+	@media only screen and (max-width:500px) {
+		
+		body{
+			font-size: 9px;
+		}
+		#main-nav a {
+			font-size: 9px;
+			
+		}
+		h2 {
+			margin-top: 20%;
+			
+		}
+		h1{
+			margin-top: 20%;
+			
+		}
+		footer {
+			margin-top: 15%;
+		}
+	}
+	
 </style>
 
 <head>
@@ -102,6 +186,7 @@
 			<div class=".burger"></div>
 			<div class=".burger"></div>
 		</label>
+	
 		<nav id="main-nav">
 
 			<ul>
@@ -126,47 +211,49 @@
 				</li>
 			</ul>
 
-		</nav>
+	
+			</nav>
 	</header>
 
-		<div id="main-div">
+	<div id="main-div">
 
-			<h1> How we do communicate with the pc ? </h1>
-			<h2> I will try to explain it to you...</h2>
-			<div id="content-text">
+		<h1> How we do communicate with the pc ? </h1>
+		<h2> I will try to explain it to you...</h2>
+		<div id="content-text">
 
-				<section>
-					<p> JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
+			<section>
+				<p> JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
 
-						This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs specific to Web pages, please see Web APIs and DOM.
+					This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs specific to Web pages, please see Web APIs and DOM.
 
-						The standard for JavaScript is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1. Older browsers support at least ECMAScript 3. On June 17, 2015, ECMA International published the sixth major version of ECMAScript, which is officially called ECMAScript 2015, and was initially referred to as ECMAScript 6 or ES6. Since then, ECMAScript standards are on yearly release cycles. This documentation refers to the latest draft version, which is currently ECMAScript 2020.
+					The standard for JavaScript is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1. Older browsers support at least ECMAScript 3. On June 17, 2015, ECMA International published the sixth major version of ECMAScript, which is officially called ECMAScript 2015, and was initially referred to as ECMAScript 6 or ES6. Since then, ECMAScript standards are on yearly release cycles. This documentation refers to the latest draft version, which is currently ECMAScript 2020.
 
-						Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and uses. </p>
-
-
-
-				</section>
-				<section>
-
-					<p> Computer programming languages allow us to give instructions to a computer in a language the computer understands. Just as many human-based languages exist, there are an array of computer programming languages that programmers can use to communicate with a computer. The portion of the language that a computer can understand is called a “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to Python, has its own distinct features, though many times there are commonalities between programming languages.
-
-						These languages allow computers to quickly and efficiently process large and complex swaths of information. For example, if a person is given a list of randomized numbers ranging from one to ten thousand and is asked to place them in ascending order, chances are that it will take a sizable amount of time and include some errors.
-
-						There are dozens of programming languages used in the industry today. We've compiled overviews of the 12 most important, relevant and in-demand of these languages below.
-
-					</p>
+					Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and uses. </p>
 
 
-				</section>
-			</div>
-			<h1>
-				It is simple, no? no.
-			</h1>
+
+			</section>
+			<section>
+
+				<p> Computer programming languages allow us to give instructions to a computer in a language the computer understands. Just as many human-based languages exist, there are an array of computer programming languages that programmers can use to communicate with a computer. The portion of the language that a computer can understand is called a “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to Python, has its own distinct features, though many times there are commonalities between programming languages.
+
+					These languages allow computers to quickly and efficiently process large and complex swaths of information. For example, if a person is given a list of randomized numbers ranging from one to ten thousand and is asked to place them in ascending order, chances are that it will take a sizable amount of time and include some errors.
+
+					There are dozens of programming languages used in the industry today. We've compiled overviews of the 12 most important, relevant and in-demand of these languages below.
+
+				</p>
+
+
+			</section>
+	
 		</div>
-
-		<footer>
-
+			<h1>
+			It is simple, no? no.
+	</h1>
+	</div>
+	
+	<footer>
+		<div id="main-div-footer">
 			<div class="footer" id="contact">
 				<ul>
 					<li> <a href="#"> Our shop </a> </li>
@@ -188,9 +275,9 @@
 					<li> address </li>
 				</ul>
 			</div>
+		</div>
+	</footer>
 
-		</footer>
-	
 
 
 </body>
