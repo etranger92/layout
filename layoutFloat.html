@@ -1,0 +1,330 @@
+<!doctype HTML>
+
+<html>
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<style>
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+		  }
+		
+		body{
+			--background-color: beige;
+		}
+		
+		/********************************HEADER**************************/
+		/***main-nav***/
+		header{
+			background-color: var(--background-color);
+			height: 100px;
+			width: auto;
+			font-size: 130%;
+		}
+		header img {
+			width: 10%;
+			float: left;
+			height:20%;
+			
+		}
+		body a{
+			text-decoration: none;
+			color: black;
+		}
+		header nav {
+			float: right;
+			
+			width: 85%;
+		}
+		header nav ul {
+			
+			padding-left: 40%;
+			list-style: none;
+		}
+		
+		header nav ul li {
+			padding-left: 10%;
+		    position: relative;
+			float:left;
+			background-color: var(--background-color)
+			
+		}
+		header nav ul li ul{
+			
+			position:absolute;
+			height: auto;
+			width: auto;
+			left:-10%;
+			display: none;
+			
+		}
+		
+		header nav ul li ul li{
+		display: block;
+		height: 10;
+		width:100%;
+		padding-top: 30%;
+		padding-left: 8%;
+		text-align: center;
+		
+		}
+		
+		header nav ul li:hover ul {
+			display: block;
+		}
+		
+		#icone{
+			height: 25%;
+			width: 7%;
+		}
+	
+		/********************************End header**************************/
+		
+		/***************************Body*******************************/
+		
+		#main-div  {
+			clear:both;
+			
+			
+			
+		}
+		#open-nav {
+			
+			display: none;
+			
+		}
+		#content-text {
+			margin-top: 10%;
+		}
+		h1{
+		text-align: center;
+			width: 100%;
+		}
+		h2 {
+			font-family: fantasy;
+			margin-top: 5%;
+		}
+		
+	
+		div section p {
+			float:left;
+			width: 45%;
+	
+			padding-right: 10px;
+			padding-left: 20px;
+		}	
+		#second-p { float:left;
+			width: 45%;
+			height: 60%;
+		
+		}
+		#main-div h1 { 
+		clear:both;
+			padding-top: 5%;
+		}
+		
+		/*******************************End Body*********************************/
+		/******************************Footer************************************/
+		
+		footer {
+			width: 100%;
+			
+			height: 100px;;
+	background-color: var(--background-color);
+			margin-top: 8%;
+		
+		}
+			
+		footer a{
+			text-decoration: none;
+		}
+		footer div {
+			float:left;
+	
+			width: 32%;
+			
+			text-align: center;
+			padding-top: 10px;
+			
+		}
+		footer div ul {
+			list-style: none;
+		}
+		
+			@media only screen and (max-width:1000px) {
+			header nav ul li {
+			padding-left: 0%;
+		}
+			
+			header nav ul { 
+			padding-left: 10%;
+			}
+			header nav ul li {
+			padding-left: 5%;
+			}
+			
+			@media only screen and (max-width:500px) {
+				
+				header {
+				position: relative;
+					width:105%;
+				
+				
+			}
+			    header nav {
+				position: absolute;
+				top: 100%;
+				display: none;
+				margin-top: 0%;
+				width: 100%;
+				background-color: var(--background-color);
+			}
+			header nav #main-nav li {
+				display: block;
+				height: 60px;
+				padding-top: 5%;
+				width: 100%;
+				text-align: left;
+				position: relative;
+			}
+			#main-nav a {
+				color: orange;
+				display: block;
+			}
+			#burger-content {
+				
+				float:left;
+				height: 50px;
+				padding-left: 120px;
+			}
+			#open-nav {
+				display: none;
+			}
+			#open-nav:checked~nav {
+				display: block;
+			}
+			header nav #main-nav li ul {
+				position: absolute;
+				
+				left: 35%;
+				display: none;
+				z-index: 10;
+			
+				
+			}
+			header nav #main-nav li ul li {
+				height: 20%;
+				top: 3%;
+			}
+			header nav #main-nav li:hover ul {
+				display: block;
+			}
+			#burger-content div {
+				color: pink;
+				display: block;
+				border-top: 5px solid orange;		
+				height: 5px;
+				margin-top: 15%;
+				width: 40px;
+			}
+			#icone {
+				float:left;
+				width: 15%;
+				height: 70%;
+				opacity: 0.7;
+				top: 13%;
+				left: 3%;
+			}
+					footer div{
+		width: 15%;
+		padding-left: 15%;
+				}
+			}
+	</style>
+</head>
+<body>
+	<header>
+		<img id="icone" src="../../Pics/icons8-google-plus-96.png">
+		<input type="checkbox" id="open-nav">
+		<label for="open-nav" id="burger-content">
+			<div class=".burger"></div>
+			<div class=".burger"></div>
+			<div class=".burger"></div>
+		</label>
+		<nav>
+			<ul id="main-nav">
+				<li> <a href="#"> Home </a> </li>
+				<li><a href="#"> languages <span height="2px" class="arrow"> &#9660;</span> </a>
+					<ul class="sub-menu">
+						<li> <a href="#"> Javascript</a>
+						</li>
+						<li><a href="#"> JAVA </a></li>
+						<li><a href="#"> C </a></li>
+					</ul>
+				</li>
+				<li> <a href="#"> About <span height="2px" class="arrow"> &#9660;</span> </a>
+					<ul class="sub-menu">
+						<li> <a href="#"> You</a> </li>
+						<li><a href="#"> Me</a></li>
+						<li><a href="#"> US</a></li>
+					</ul>
+				</li>
+				<li> <a href="#"> Contact </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<div id="position-div"> 
+	<div id="main-div">
+		<h1> How we do communicate with the pc ? </h1>
+		<h2> I will try to explain it to you...</h2>
+		<div id="content-text">
+			<section>
+				
+				<p> JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
+					This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs specific to Web pages, please see Web APIs and DOM.
+					The standard for JavaScript is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1. Older browsers support at least ECMAScript 3. On June 17, 2015, ECMA International published the sixth major version of ECMAScript, which is officially called ECMAScript 2015, and was initially referred to as ECMAScript 6 or ES6. Since then, ECMAScript standards are on yearly release cycles. This documentation refers to the latest draft version, which is currently ECMAScript 2020.
+					Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and uses. </p>
+			</section>
+		
+				<p id="second-p"> Computer programming languages allow us to give instructions to a computer in a language the computer understands. Just as many human-based languages exist, there are an array of computer programming languages that programmers can use to communicate with a computer. The portion of the language that a computer can understand is called a “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to Python, has its own distinct features, though many times there are commonalities between programming languages.
+					These languages allow computers to quickly and efficiently process large and complex swaths of information. For example, if a person is given a list of randomized numbers ranging from one to ten thousand and is asked to place them in ascending order, chances are that it will take a sizable amount of time and include some errors.
+					There are dozens of programming languages used in the industry today. We've compiled overviews of the 12 most important, relevant and in-demand of these languages below.
+				</p>
+			
+		</div>
+		<h1>
+			It is simple, no? no.
+		</h1>
+	</div>
+	<footer>
+		<div class="footer" id="contact">
+			<ul>
+				<li> <a href="#"> Our shop </a> </li>
+				<li> <a href="#"> Our word </a> </li>
+				<li> <a href="#">  Our policy </a> </li>
+				<li> <a href="#"> FAQ </a> </li>
+			</ul>
+		</div>
+		<div class="footer" id="address">
+			<p> Where could you find us ?</p>
+			<p> 59 trust you b111ty</p>
+		</div>
+		<div class="footer" id="icone-footer">
+			<p id="footer-titre"> contact </p>
+			<ul>	
+				<li>  number </li>
+				<li>  email</li>
+				<li>  address  </li>
+			</ul>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
