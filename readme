@@ -1,3 +1,2 @@
 I did not pay that much attention to the css design as my goal was to make a responsive layout using one specific method for each such: float, flex, grid and other.
-*Note: It is not a good practice to mainly focus on one method to make a layout. Mixing methods into one layout is way better, as every methods has his own advantage that depends of the content and the display that you want. 
-This branch is only for training. 
+*Note: Mixing methods into one layout is way better, as every methods has his own advantage. This depository is only for testing things out. 
